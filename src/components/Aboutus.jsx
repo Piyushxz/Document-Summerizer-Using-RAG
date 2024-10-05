@@ -97,9 +97,9 @@ const Aboutus = () => {
 
             {/* Suggestions Section */}
             <div className="mt-6">
-            <h1 className="font-montserrat font-bold text-2xl md:text-4xl text-white mb-4">
-  If you have any suggestions, let us know!
-</h1>
+              <h1 className="font-montserrat font-bold text-2xl md:text-4xl text-white mb-4">
+                If you have any suggestions, let us know!
+              </h1>
 
               <label htmlFor="exampleFormControlInput1" className="block text-lg font-medium mb-2 text-white">Email address</label>
               <input

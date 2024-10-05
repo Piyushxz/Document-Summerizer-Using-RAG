@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"; // Import Navbar
 const FileUpload = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle the file upload logic here
+    
     console.log("File upload form submitted");
   };
 

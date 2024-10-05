@@ -31,7 +31,7 @@ const Home = () =>{
       </span>{" "}
       Using RAG.
     </h1>
-    <h3 className="font-montserrat font-bold text-xl mt-4 text-grey-white">
+    <h3 className="font-montserrat font-bold text-xl mt-4 text-white">
       Summarize long documents with the power of RAG technology, blending advanced retrieval and generation.
     </h3>
   </div>

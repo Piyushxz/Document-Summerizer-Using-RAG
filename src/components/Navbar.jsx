@@ -18,7 +18,7 @@ const Navbar = () =>{
                 Login
             </button>
             <button 
-         
+            onClick={()=>modalDispatch({type:"OPEN_SIGNUP_MODAL"})}
             className="bg-black text-sm md:text-base p-2 rounded-md hover:bg-gray-800 transition duration-300 text-white ">
                 Signup
             </button>

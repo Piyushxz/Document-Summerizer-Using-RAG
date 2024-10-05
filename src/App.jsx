@@ -1,25 +1,19 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar'
-import FileUpload from './components/FileUpload'
-import SignInModal from './components/SignInModal'
-import { useModal } from './context/modal-context'
+
+import Home from './pages/Home'
 
 
 
 function App() {
 
-  const {isSignInModalOpen} = useModal()
+ 
 
   return (
+ 
     <>
-        <Navbar/>
-        <FileUpload/>
-        
+    <Home/> 
 
-        {
-          isSignInModalOpen &&
-          <SignInModal/>
-        }
+
     </>
   )
 }

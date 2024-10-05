@@ -6,6 +6,14 @@ const modalReducer = (state,{type,payload}) =>{
                 isSignInModalOpen : !state.isSignInModalOpen
             }
 
+        case "OPEN_SIGNUP_MODAL":
+            return{
+                ...state,
+                isSignUpModalOpen:!state.isSignUpModalOpen
+            }
+
+        default:
+            return state
 
 
         

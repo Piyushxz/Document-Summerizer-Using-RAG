@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 
 
 LIVE DEMO - https://document-summerizer-using-rag.vercel.app/
+
+netlify -https://document-summerizer.netlify.app/

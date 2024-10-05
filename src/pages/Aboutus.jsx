@@ -2,9 +2,15 @@ import Navbar from "../components/Navbar";
 import { useModal } from "../context/modal-context";
 import SignInModal from "../components/SignInModal";
 import SignUpModal from "../components/SignUpModal";
+import { useState } from "react";
 
 const Aboutus = () => {
   const { isSignInModalOpen, isSignUpModalOpen } = useModal();
+  const [openAccordion, setOpenAccordion] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenAccordion(openAccordion === index ? null : index);
+  };
 
   return (
     <>
@@ -21,49 +27,79 @@ const Aboutus = () => {
               {/* Accordion Item 1 */}
               <div className="border border-gray-700 rounded-lg shadow-md">
                 <h2 className="bg-gray-800 p-4 rounded-t-lg">
-                  <button className="text-left w-full font-semibold text-lg text-white" type="button">
+                  <button
+                    className="text-left w-full font-semibold text-lg text-white flex items-center justify-between"
+                    type="button"
+                    onClick={() => toggleAccordion(1)}
+                  >
                     Analyze Your Text
+                    <span className={`transition-transform duration-200 ${openAccordion === 1 ? 'transform rotate-90' : ''}`}>
+                      ➤
+                    </span>
                   </button>
                 </h2>
-                <div className="p-4 bg-gray-900 rounded-b-lg">
-                  <p className="text-gray-300">
-                    Summarize your text quickly and efficiently.
-                  </p>
-                </div>
+                {openAccordion === 1 && (
+                  <div className="p-4 bg-gray-900 rounded-b-lg">
+                    <p className="text-gray-300">
+                      Summarize your text quickly and efficiently.
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* Accordion Item 2 */}
               <div className="border border-gray-700 rounded-lg shadow-md">
                 <h2 className="bg-gray-800 p-4 rounded-t-lg">
-                  <button className="text-left w-full font-semibold text-lg text-white" type="button">
-                    Free to Use
+                  <button
+                    className="text-left w-full font-semibold text-lg text-white flex items-center justify-between"
+                    type="button"
+                    onClick={() => toggleAccordion(2)}
+                  >
+                    Free to Use.
+                    <span className={`transition-transform duration-200 ${openAccordion === 2 ? 'transform rotate-90' : ''}`}>
+                      ➤
+                    </span>
                   </button>
                 </h2>
-                <div className="p-4 bg-gray-900 rounded-b-lg">
-                  <p className="text-gray-300">
-                    It is a free-to-use AI tool to summarize your legal documents.
-                  </p>
-                </div>
+                {openAccordion === 2 && (
+                  <div className="p-4 bg-gray-900 rounded-b-lg">
+                    <p className="text-gray-300">
+                      It is a free-to-use AI tool to summarize your legal documents.
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* Accordion Item 3 */}
               <div className="border border-gray-700 rounded-lg shadow-md">
                 <h2 className="bg-gray-800 p-4 rounded-t-lg">
-                  <button className="text-left w-full font-semibold text-lg text-white" type="button">
+                  <button
+                    className="text-left w-full font-semibold text-lg text-white flex items-center justify-between"
+                    type="button"
+                    onClick={() => toggleAccordion(3)}
+                  >
                     Browser Compatible
+                    <span className={`transition-transform duration-200 ${openAccordion === 3 ? 'transform rotate-90' : ''}`}>
+                      ➤
+                    </span>
                   </button>
                 </h2>
-                <div className="p-4 bg-gray-900 rounded-b-lg">
-                  <p className="text-gray-300">
-                    This tool works in any web browser such as Chrome, Firefox, Internet Explorer, Safari, and Opera.
-                  </p>
-                </div>
+                {openAccordion === 3 && (
+                  <div className="p-4 bg-gray-900 rounded-b-lg">
+                    <p className="text-gray-300">
+                      This tool works in any web browser such as Chrome, Firefox, Internet Explorer, Safari, and Opera.
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
 
             {/* Suggestions Section */}
             <div className="mt-6">
-              <h1 className="text-2xl font-semibold text-white mb-4">If you have any suggestions, let us know!</h1>
+              <h1 className="font-montserrat font-bold text-2xl md:text-4xl text-white mb-4">
+                If you have any suggestions, let us know!
+              </h1>
+
               <label htmlFor="exampleFormControlInput1" className="block text-lg font-medium mb-2 text-white">Email address</label>
               <input
                 type="email"
@@ -78,7 +114,10 @@ const Aboutus = () => {
                 rows="3"
                 placeholder="Your comments here"
               ></textarea>
-              <button type="button" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">
+              <button
+                type="button"
+                className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+              >
                 Submit
               </button>
             </div>

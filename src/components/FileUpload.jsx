@@ -3,7 +3,7 @@ import React from "react";
 const FileUpload = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle the file upload logic here
+    
     console.log("File upload form submitted");
   };
 

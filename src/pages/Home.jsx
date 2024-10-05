@@ -22,8 +22,8 @@ const Home = () =>{
         <SignUpModal/>
     }
 
-<div className="flex flex-col md:flex-row justify-center mt-14">
-  <div className="md:w-1/2 w-full pt-10 md:pt-20 text-center md:text-left">
+<div className="flex flex-col items-center justify-center mt-14">
+  <div className="w-full md:w-1/2 text-center">
     <h1 className="font-montserrat font-extrabold text-4xl md:text-6xl text-white">
       Document{" "}
       <span className="bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">
@@ -31,16 +31,13 @@ const Home = () =>{
       </span>{" "}
       Using RAG.
     </h1>
-  </div>
-
-  <div className="w-full md:w-1/3 pl-0 md:pl-4 mt-8 md:mt-0 flex justify-center">
-    <img
-      src={Photo}
-      alt="Document Summerizer"
-      className="w-8/12 md:w-full"
-    />
+    <h3 className="font-montserrat font-bold text-xl mt-4 text-grey-white">
+      Summarize long documents with the power of RAG technology, blending advanced retrieval and generation.
+    </h3>
   </div>
 </div>
+
+
 
 
     </>

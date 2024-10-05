@@ -3,8 +3,8 @@ import modalReducer from "../reducer/modal-reducer"
 
 
 const initialState = {
-    isSignInModalOpen:'false',
-    isSignUpModalOpen:'false'
+    isSignInModalOpen:false,
+    isSignUpModalOpen:false
 }
 
 

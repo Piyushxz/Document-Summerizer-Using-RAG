@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      colors: {
+        customGray: '#191919',
+      }
     },
     
   },

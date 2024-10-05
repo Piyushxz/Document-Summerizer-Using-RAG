@@ -9,8 +9,7 @@ const Aboutus = () => {
   return (
     <>
       <Navbar />
-      {isSignInModalOpen && <SignInModal />}
-      {isSignUpModalOpen && <SignUpModal />}
+
 
       <div className="container mx-auto p-4 mt-14">
         <div className="flex flex-col md:flex-row justify-center">

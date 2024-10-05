@@ -56,7 +56,7 @@ const Aboutus = () => {
                     type="button"
                     onClick={() => toggleAccordion(2)}
                   >
-                    Free to Use
+                    Free to Use.
                     <span className={`transition-transform duration-200 ${openAccordion === 2 ? 'transform rotate-90' : ''}`}>
                       ➤
                     </span>

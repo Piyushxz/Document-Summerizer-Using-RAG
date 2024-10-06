@@ -94,7 +94,7 @@ const Aboutus = () => {
 
             {/* Suggestions Section */}
             <div className="mt-6">
-              <h1 className="font-montserrat font-bold text-2xl md:text-4xl text-white mb-4">
+              <h1 className="font-montserrat font-bold text-2xl md:text-4xl text-white mb-8">
                 If you have any suggestions, let us know!
               </h1>
 

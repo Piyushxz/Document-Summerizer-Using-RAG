@@ -1,11 +1,10 @@
 import Navbar from "../components/Navbar";
-import { useModal } from "../context/modal-context";
-import SignInModal from "../components/SignInModal";
-import SignUpModal from "../components/SignUpModal";
+
+
 import { useState } from "react";
 
 const Aboutus = () => {
-  const { isSignInModalOpen, isSignUpModalOpen } = useModal();
+
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -14,7 +13,6 @@ const Aboutus = () => {
 
   return (
     <>
-      <Navbar />
 
 
       <div className="container mx-auto p-4 mt-14">

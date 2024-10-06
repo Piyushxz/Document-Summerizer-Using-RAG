@@ -1,9 +1,8 @@
 import Navbar from "../components/Navbar"
 import { useModal } from "../context/modal-context"
-import SignInModal from "../components/SignInModal"
-import Photo from "../assets/photo.png";
-import SignUpModal from "../components/SignUpModal";
+import { Element } from "react-scroll";
 import Features from "../components/Features";
+import Aboutus from "./Aboutus";
 const Home = () =>{
 
     const {isSignInModalOpen,isSignUpModalOpen} = useModal()
@@ -37,6 +36,10 @@ const Home = () =>{
         
         <Features/>
     </div>
+
+    <Element name="about-us">
+        <Aboutus/>
+    </Element>
     
 
     

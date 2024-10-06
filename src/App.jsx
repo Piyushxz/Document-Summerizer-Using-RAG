@@ -17,7 +17,7 @@ function App() {
       {/* Define the routes within the Router */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
+
         <Route path="/upload" element={<FileUpload />} />
       </Routes>
     </Router>

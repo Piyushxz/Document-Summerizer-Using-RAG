@@ -3,10 +3,12 @@ import { useModal } from "../context/modal-context";
 import { Element } from "react-scroll";
 import Features from "../components/Features";
 import Aboutus from "./Aboutus";
-import Footer from "../components/Footer"; // Import your Footer component
+
+import Footer from "../components/Footer";
+
 
 const Home = () => {
-    const { isSignInModalOpen, isSignUpModalOpen } = useModal();
+
 
     return (
         <>
@@ -58,14 +60,24 @@ const Home = () => {
                 </div>
             </div>
 
-            <Element name="about-us">
-                <Aboutus />
-            </Element>
 
-            {/* Add the Footer component here */}
-            <Footer />
-        </>
+
+
+    <Element name="about-us">
+        <Aboutus/>
+    </Element>
+    
+
+    <Footer/>
+
+    </>
+
+    
+
+        
+        
     );
 }
+
 
 export default Home;

@@ -12,6 +12,7 @@ const FileUpload = () => {
     <>
       <Navbar /> {/* Ensure Navbar is visible */}
       <div className="flex flex-col items-center justify-center mt-10 w-full max-w-2xl mx-auto">
+        <h1 className="font-montserrat font-bold text-2xl md:text-4xl text-white mb-8">Upload you document below:</h1>
         <form onSubmit={handleSubmit} className="mb-6 w-full">
           <div className="flex items-center justify-center">
             <label

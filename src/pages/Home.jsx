@@ -3,6 +3,7 @@ import { useModal } from "../context/modal-context"
 import { Element } from "react-scroll";
 import Features from "../components/Features";
 import Aboutus from "./Aboutus";
+import Footer from "../components/Footer";
 const Home = () =>{
 
     const {isSignInModalOpen,isSignUpModalOpen} = useModal()
@@ -70,7 +71,7 @@ const Home = () =>{
     </Element>
     
 
-
+    <Footer/>
 
     </>
 

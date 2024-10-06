@@ -1,9 +1,8 @@
 import Navbar from "../components/Navbar"
 import { useModal } from "../context/modal-context"
-import SignInModal from "../components/SignInModal"
-import Photo from "../assets/photo.png";
-import SignUpModal from "../components/SignUpModal";
+import { Element } from "react-scroll";
 import Features from "../components/Features";
+import Aboutus from "./Aboutus";
 const Home = () =>{
 
     const {isSignInModalOpen,isSignUpModalOpen} = useModal()
@@ -37,9 +36,41 @@ const Home = () =>{
         
         <Features/>
     </div>
+    <div>
+    <div className="flex justify-center mt-10">
+        <h1 className="font-montserrat font-extrabold text-4xl md:text-6xl text-white">How it works</h1>
+    </div>
+
+    <div className="flex flex-col md:flex-row justify-center items-center mt-10 space-y-4 md:space-y-0 md:space-x-4">
+        
+        <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
+            <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20">
+                1. Upload Your Document
+            </h1>
+        </div>
+
+        <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
+            <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20">
+                2. RAG technology processes the document.
+            </h1>
+        </div>
+
+        <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
+            <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20">
+                3. Get your summarized results instantly.
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+
+    <Element name="about-us">
+        <Aboutus/>
+    </Element>
     
 
-    
+
 
     </>
 

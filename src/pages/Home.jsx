@@ -38,26 +38,27 @@ const Home = () => {
                 <div className="flex justify-center mt-10">
                     <h1 className="font-montserrat font-extrabold text-4xl md:text-6xl text-white">How it works</h1>
                 </div>
-
                 <div className="flex flex-col md:flex-row justify-center items-center mt-10 space-y-4 md:space-y-0 md:space-x-4">
-                    <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
-                        <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20">
+                    <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2 hover:bg-white hover:text-black transition-all duration-300 p-4 pt-4 mt-2" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
+                        <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20 hover:text-black">
                             1. Upload Your Document
                         </h1>
                     </div>
 
-                    <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
-                        <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20">
+                    <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2 hover:bg-white hover:text-black transition-all duration-300" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
+                        <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20 hover:text-black">
                             2. RAG technology processes the document.
                         </h1>
                     </div>
 
-                    <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
-                        <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20">
+                    <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2 hover:bg-white hover:text-black transition-all duration-300" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
+                        <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20  hover:text-black">
                             3. Get your summarized results instantly.
                         </h1>
                     </div>
                 </div>
+
+
             </div>
 
 

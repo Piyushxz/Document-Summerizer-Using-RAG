@@ -1,10 +1,12 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { scroller } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import { useModal } from '../context/modal-context';
 const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const {modalDispatch} = useModal()
   const scrollToAbout = () => {
     if (location.pathname === '/') {
 

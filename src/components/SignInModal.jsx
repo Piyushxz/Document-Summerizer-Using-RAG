@@ -25,7 +25,7 @@ const SignInModal = () => {
             {/* Modal header */}
             <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 bg-customGray">
               <h3 className="text-xl font-montserrat font-semibold text-white dark:text-white">
-                SignIn
+                Sign In
               </h3>
               <button
                 onClick={closeModal}

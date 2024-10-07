@@ -53,7 +53,7 @@ const Home = () => {
 
                     <div className="text-center bg-gray-800 w-full md:w-1/4 rounded-lg m-2 hover:bg-white hover:text-black transition-all duration-300" style={{ minHeight: '16rem', maxHeight: '16rem' }}>
                         <h1 className="font-montserrat font-extrabold text-xl md:text-2xl text-white px-20 pt-20 pb-20  hover:text-black">
-                            3. Get your summarized results instantly.
+                            3. Get your summarized results instantly and chat with your document.
                         </h1>
                     </div>
                 </div>

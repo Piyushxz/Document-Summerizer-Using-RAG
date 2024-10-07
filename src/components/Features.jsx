@@ -1,20 +1,23 @@
 import React from 'react';
+import logo2 from '../assets/icon-02.png';
+import logo1 from '../assets/icon-01.png';
+import logo3 from '../assets/icon-03.png';
 
 const featuresData = [
   {
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-400 40-640l440-240 440 240-440 240Zm0 160L63-467l84-46 333 182 333-182 84 46-417 227Zm0 160L63-307l84-46 333 182 333-182 84 46L480-80Zm0-411 273-149-273-149-273 149 273 149Zm0-149Z"/></svg>',
+    icon: logo1,
     title: 'Intelligent Writing Assistance',
     description: 'Our AI writing tool analyzes your content, suggests improvements.',
   },
   {
-    icon: 'images/icon-02.svg',
+    icon: logo2,
     title: 'Grammar and Spell Check',
     description: 'Say goodbye to embarrassing typos and grammar mistakes.',
   },
   {
-    icon: 'images/icon-03.svg',
-    title: 'Plagiarism Detection',
-    description: 'Originality is key, and our AI writing tool helps you maintain it.',
+    icon:logo3,
+    title: 'Time-Efficient Summarization',
+    description: 'Using our AI tool to summarize text, articles, documents or legal files greatly which will save your time.',
   },
   {
     icon: 'images/icon-04.svg',
@@ -52,16 +55,11 @@ const Features = () => {
               <div className="group relative">
                 {/* Icon */}
                 <span className="inline-block mb-6 ">
-                  <svg
-                    className="mx-auto w-16 h-16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="#5f6368"
-                  >
-                    <path d="M480-400 40-640l440-240 440 240-440 240Zm0 160L63-467l84-46 333 182 333-182 84 46-417 227Zm0 160L63-307l84-46 333 182 333-182 84 46L480-80Zm0-411 273-149-273-149-273 149 273 149Zm0-149Z" />
-                  </svg>
+                <img
+      src={feature.icon}   // This will now point to the image from your `featuresData`
+      alt={feature.title}   // For accessibility, it's a good idea to add an alt text
+      className="mx-auto w-16 h-16"  // Adjust styling as per your needs
+    />
                 </span>
                 {/* Title */}
                 <h4 className="font-semibold text-xl mb-4">{feature.title}</h4>

@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col items-center justify-center mt-20">
+            <div className="flex flex-col items-center justify-center md:mt-[250px] mt-24">
                 <div className="w-full md:w-1/2 text-center">
                     <h1 className="font-montserrat font-extrabold text-4xl md:text-6xl text-white">
                         Document{" "}
@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="mt-14">
+            <div className="mt-24">
                 <div className="flex justify-center pt-20 pb-6">
                     <h1 className="font-montserrat font-extrabold text-xl md:text-5xl text-white">Key Features of Our Tool</h1>
                 </div>

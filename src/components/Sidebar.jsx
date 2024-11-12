@@ -16,7 +16,7 @@ const Sidebar = () => {
         type="button"
         onClick={toggleSidebar}
         className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg hover:bg-customGray focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        style={{ position: 'fixed', top: '0px', left: '0px', zIndex: '50' }}
+        style={{ position: 'relative', top: '0px', left: '0px', zIndex: '50' }}
       >
         <span className="sr-only">Open sidebar</span>
         <svg

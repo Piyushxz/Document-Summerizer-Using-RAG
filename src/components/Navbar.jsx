@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex  justify-between  gap-4 md:gap-0  md:px-12 py-4 items-center bg-black z-50 ">
+    <div className="flex  justify-between  gap-4 md:gap-0  md:px-12 py-4 items-center z-1000 bg-black fixed top-0 w-full md:absolute">
       <div className='block md:hidden'>
         <Sidebar/>
       </div>

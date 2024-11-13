@@ -16,7 +16,7 @@ const Sidebar = () => {
         type="button"
         onClick={toggleSidebar}
         className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg hover:bg-customGray focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        style={{ position: 'relative', top: '0px', left: '0px', zIndex: '50' }}
+        style={{ position: 'relative', top: '0px', left: '0px', zIndex: '100' }}
       >
         <span className="sr-only">Open sidebar</span>
         <svg
@@ -37,7 +37,7 @@ const Sidebar = () => {
    
       <aside
         id="default-sidebar"
-        className={`fixed top-0 left-0 z-40 h-screen w-40 transition-all duration-500 border-r-4 border-customGray ${
+        className={`fixed top-0 left-0  h-screen w-40 transition-all duration-500 border-r-4 border-customGray ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         aria-label="Sidebar"
@@ -66,17 +66,7 @@ const Sidebar = () => {
             
           </ul>
         
-        
-          <ul onClick={()=>navigate("/upload")}
-          className="space-y-2">
-            <li>
-              <div className="flex  font-montserrat font-semibold p-2 text-white rounded-lg dark:text-white hover:bg-customGray border-2 border-customGray group mt-2 ">
 
-                <span className="ms-3">File Upload</span>
-              </div>
-            </li>
-            
-          </ul>
         </div>
        
 

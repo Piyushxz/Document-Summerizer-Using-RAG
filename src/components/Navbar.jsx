@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex  justify-between  gap-4 md:gap-0  md:px-12 py-4 items-center z-1000 bg-black fixed top-0 w-full md:absolute">
+    <div className="flex  justify-between  gap-4 md:gap-0  md:px-12 py-4 items-center z-200 bg-black fixed top-0 w-full md:absolute z-[250]">
       <div className='block md:hidden'>
         <Sidebar/>
       </div>
@@ -41,16 +41,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="flex justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-        <button
-          onClick={scrollToAbout}
-          className="bg-black text-sm md:text-base p-2 rounded-md hover:bg-gray-800 transition duration-300 text-white"
-        >
-          About Us
-        </button>
-        <Link to="/upload" className="bg-black text-sm hidden md:block p-2 rounded-md hover:bg-gray-800 transition duration-300 text-white">
-          File Upload
-        </Link>
+      <div className="flex justify-center items-center space-y-4 md:space-y-0 md:space-x-6 mb-4 md:mb-0">
         <button
           onClick={() => modalDispatch({ type: 'OPEN_SIGNIN_MODAL' })}
           className="bg-black text-sm hidden md:block p-2 rounded-md hover:bg-gray-800 transition duration-300 text-white"
@@ -63,6 +54,14 @@ const Navbar = () => {
         >
           Signup
         </button>
+
+        <button
+          onClick={scrollToAbout}
+          className="bg-black text-sm md:text-base p-2 rounded-md hover:bg-gray-800 transition duration-300 text-white"
+        >
+          About Us
+        </button>
+        
       </div>
     </div>
   );

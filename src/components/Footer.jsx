@@ -2,7 +2,7 @@ import React from 'react';
 const Footer = () =>{
     return(
         <>
-                    <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% flex justify-between pl-14 pr-14 pt-14 pb-14">
+                    <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% flex flex-col md:justify-between pl-14 pr-14 pt-14 pb-14">
                 <div className="flex flex-col  max-w-96 ">
                     <h3 className="font-montserrat text-3xl font-extrabold text-white">ProjectName</h3>
                     <h5 className="font-montserrat text-white ">This is final year project.</h5>

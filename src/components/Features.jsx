@@ -1,13 +1,17 @@
 import React from 'react';
-import logo2 from '../assets/icon-02.png';
-import logo1 from '../assets/icon-01.png';
-import logo3 from '../assets/icon-03.png';
+
+import logo1 from '../assets/icon1.svg';
+import logo2 from '../assets/icon2.svg';
+import logo3 from '../assets/icon3.svg';
+import logo4 from '../assets/icon4.svg';
+import logo5 from '../assets/icon5.svg';
+import logo6 from '../assets/icon6.svg';
 
 const featuresData = [
   {
     icon: logo1,
     title: 'Intelligent Writing Assistance',
-    description: 'Our AI writing tool analyzes your content, suggests improvements.',
+    description: 'Our AI writing tool analyzes your content, suggesting improvements.',
   },
   {
     icon: logo2,
@@ -15,51 +19,43 @@ const featuresData = [
     description: 'Say goodbye to embarrassing typos and grammar mistakes.',
   },
   {
-    icon:logo3,
+    icon: logo3,
     title: 'Time-Efficient Summarization',
-    description: 'Using our AI tool to summarize text, articles, documents or legal files greatly which will save your time.',
+    description: 'Use our AI tool to summarize text, articles, and documents efficiently.',
   },
   {
-    icon: 'images/icon-04.svg',
+    icon: logo4,
     title: 'Voice to Text Conversion',
-    description: 'Transform your spoken words into written text easily & effortlessly.',
+    description: 'Transform your spoken words into written text easily and effortlessly.',
   },
   {
-    icon: 'images/icon-05.svg',
+    icon: logo5,
     title: 'Style and Tone Adaptation',
-    description: 'Whether you need a professional, or positive tone, it has everyone.',
+    description: 'Adjust to a professional or positive tone with ease.',
   },
   {
-    icon: 'images/icon-06.svg',
+    icon: logo6,
     title: 'Content Generation',
-    description: 'Need inspiration or assistance with generating content?',
+    description: 'Get inspiration or assistance with generating content on demand.',
   },
 ];
 
 const Features = () => {
   return (
-    <div className="relative text-white py-12 ">
-      
+    <div className="relative text-white py-12">
       <div className="container mx-auto max-w-5xl">
-       
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
           {featuresData.map((feature, index) => (
             <div
               key={index}
               className={`hover:bg-gray-800 opacity-75 hover:opacity-100 transition duration-300 p-8 text-center border-gray-800 ${
-                (index + 1) % 3 !== 0 ? 'border-r' : '' 
-              } ${
-                index < featuresData.length - 3 ? 'border-b' : '' 
-              }`}
+                (index + 1) % 3 !== 0 ? 'border-r' : ''
+              } ${index < featuresData.length - 3 ? 'border-b' : ''}`}
             >
               <div className="group relative">
                 {/* Icon */}
-                <span className="inline-block mb-6 ">
-                <img
-      src={feature.icon}   // This will now point to the image from your `featuresData`
-      alt={feature.title}   // For accessibility, it's a good idea to add an alt text
-      className="mx-auto w-16 h-16"  // Adjust styling as per your needs
-    />
+                <span className="inline-block mb-6 mx-auto w-16 h-16">
+                  <img src={feature.icon} alt={feature.title} className="w-full h-full" />
                 </span>
                 {/* Title */}
                 <h4 className="font-semibold text-xl mb-4">{feature.title}</h4>
